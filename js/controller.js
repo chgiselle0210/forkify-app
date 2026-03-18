@@ -7,9 +7,7 @@ const controlRecipes = async function () {
     if (!id) return;
 
     recipeView.renderSpinner();
-
     await model.loadRecipe(id);
-
     recipeView.render(model.state.recipe);
   } catch (err) {
     console.error(err);

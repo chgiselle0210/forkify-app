@@ -1,4 +1,4 @@
-export default new (class RecipeView {
+class RecipeView {
   #parentElement = document.querySelector('.recipe');
   #data;
 
@@ -40,16 +40,28 @@ export default new (class RecipeView {
     this.#parentElement.innerHTML = '';
   }
 
-  #generateMarkupIngredient(ingredient) {
+  #formatQuantity(quantity) {
+    if (!quantity) return '';
+
+    if (quantity === 0.5) return '1/2';
+    if (quantity === 0.25) return '1/4';
+    if (quantity === 0.75) return '3/4';
+    if (quantity === 0.3333333333333333) return '1/3';
+    if (quantity === 0.6666666666666666) return '2/3';
+
+    return quantity;
+  }
+
+  #generateMarkupIngredient(ing) {
     return `
       <li class="recipe__ingredient">
         <svg class="recipe__icon">
           <use href="./img/icons.svg#icon-check"></use>
         </svg>
-        <div class="recipe__quantity">${ingredient.quantity ?? ''}</div>
+        <div class="recipe__quantity">${this.#formatQuantity(ing.quantity)}</div>
         <div class="recipe__description">
-          <span class="recipe__unit">${ingredient.unit ?? ''}</span>
-          ${ingredient.description}
+          <span class="recipe__unit">${ing.unit ?? ''}</span>
+          ${ing.description}
         </div>
       </li>
     `;
@@ -85,7 +97,9 @@ export default new (class RecipeView {
       <div class="recipe__ingredients">
         <h2 class="heading--2">Recipe ingredients</h2>
         <ul class="recipe__ingredient-list">
-          ${this.#data.ingredients.map(this.#generateMarkupIngredient).join('')}
+          ${this.#data.ingredients
+            .map(ing => this.#generateMarkupIngredient(ing))
+            .join('')}
         </ul>
       </div>
 
@@ -93,8 +107,8 @@ export default new (class RecipeView {
         <h2 class="heading--2">How to cook it</h2>
         <p class="recipe__directions-text">
           This recipe was carefully designed and tested by
-          <span class="recipe__publisher">${this.#data.publisher}</span>. Please check out
-          directions at their website.
+          <span class="recipe__publisher">${this.#data.publisher}</span>.
+          Please check out directions at their website.
         </p>
         <a
           class="btn--small recipe__btn"
@@ -109,4 +123,6 @@ export default new (class RecipeView {
       </div>
     `;
   }
-})();
+}
+
+export default new RecipeView();

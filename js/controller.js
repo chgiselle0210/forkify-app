@@ -2,8 +2,8 @@ import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import * as model from './model.js';
 import searchView from './views/searchView.js';
-import resultsView from './views/resultsView.js';
-import recipeView from './views/recipeView.js';
+import resultsView from './views/ResultsView.js';
+import recipeView from './views/RecipeView.js';
 import paginationView from './views/paginationView.js';
 
 

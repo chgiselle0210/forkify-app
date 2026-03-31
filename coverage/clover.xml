@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1774988099140" clover="3.2.0">
+  <project timestamp="1774988099140" name="All files">
+    <metrics statements="22" coveredstatements="13" conditionals="1" coveredconditionals="0" methods="4" coveredmethods="1" elements="27" coveredelements="14" complexity="0" loc="22" ncloc="22" packages="1" files="2" classes="2"/>
+    <file name="config.js" path="C:\Users\0210g\Documents\Certificado de Fullstack Developer (Tecmilenio) - Giselle Cantú Chávez\Programación con Java Script II (Certificado)\forkify-app\src\js\config.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+    </file>
+    <file name="model.js" path="C:\Users\0210g\Documents\Certificado de Fullstack Developer (Tecmilenio) - Giselle Cantú Chávez\Programación con Java Script II (Certificado)\forkify-app\src\js\model.js">
+      <metrics statements="17" coveredstatements="8" conditionals="1" coveredconditionals="0" methods="4" coveredmethods="1"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="0" type="stmt"/>
+      <line num="16" count="0" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="20" count="0" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="33" count="0" type="stmt"/>
+      <line num="35" count="0" type="stmt"/>
+      <line num="36" count="0" type="stmt"/>
+      <line num="38" count="0" type="stmt"/>
+      <line num="45" count="0" type="stmt"/>
+      <line num="48" count="1" type="cond" truecount="0" falsecount="1"/>
+      <line num="49" count="3" type="stmt"/>
+      <line num="51" count="3" type="stmt"/>
+      <line num="52" count="3" type="stmt"/>
+      <line num="54" count="3" type="stmt"/>
+    </file>
+  </project>
+</coverage>

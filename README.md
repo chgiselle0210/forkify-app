@@ -49,6 +49,15 @@ https://forkify-js-giselle.netlify.app/
 
 ---
 
+
+## Nota
+
+Durante el despliegue en Netlify, los íconos SVG externos no se cargaban  debido a la forma en que Parcel maneja las rutas en producción.
+
+Como solución, utilicé SVG inline en ciertas partes del index.html y, ahora, se pueden observar dichos íconos en la app.
+
+---
+
 ## Desarrolladora
 
 Giselle Cantú Chávez

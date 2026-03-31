@@ -1,6 +1,6 @@
 # Forkify App
 
-Esta es una aplicación web donde se pueden buscar recetas y ver su información de forma dinámica.  
+Esta es una aplicación web donde se pueden buscar recetas y ver su información dinámicamente.  
 
 El proyecto lo desarrollé como parte del bootcamp *Programación con JavaScript II*. Apliqué lo que aprendí sobre consumo de APIs, manejo del DOM y arquitectura MVC.
 

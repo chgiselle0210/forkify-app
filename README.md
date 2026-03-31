@@ -38,7 +38,7 @@ El proyecto lo desarrollé como parte del bootcamp *Programación con JavaScript
 ## Características
 
 - La aplicación sigue una arquitectura MVC para organizar mejor el código.
-- Se llevó a cabo la paginación y pruebas básicas para validar la lógica.
+- Se llevaron a cabo la paginación y pruebas básicas para validar la lógica.
 - El proyecto está concentrado en funcionalidad más que en el diseño.
 
 ---

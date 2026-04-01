@@ -56,6 +56,8 @@ Durante el despliegue en Netlify, los íconos SVG externos no se cargaban  debid
 
 Como solución, utilicé SVG inline en ciertas partes del index.html y, ahora, se pueden observar dichos íconos en la app.
 
+Reemplacé el SVG loader por un loader en CSS debido a problemas de renderizado en producción (Netlify).
+
 ---
 
 ## Desarrolladora
